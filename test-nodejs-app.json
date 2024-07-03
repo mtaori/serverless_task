@@ -2,7 +2,7 @@
     "taskDefinitionArn": "arn:aws:ecs:ap-south-1:381491902899:task-definition/test-nodejs-app:1",
     "containerDefinitions": [
         {
-            "name": "nodejs-app-container",
+            "name": "demo-nodejs-app",
             "image": "381491902899.dkr.ecr.ap-south-1.amazonaws.com/demo-nodejs-app",
             "cpu": 0,
             "portMappings": [
