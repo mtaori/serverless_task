@@ -1,13 +1,13 @@
 {
-    "taskDefinitionArn": "arn:aws:ecs:ap-south-1:381491902899:task-definition/nodejs-app-task:1",
+    "taskDefinitionArn": "arn:aws:ecs:ap-south-1:381491902899:task-definition/test-nodejs-app:1",
     "containerDefinitions": [
         {
-            "name": "nodejs-app",
-            "image": "381491902899.dkr.ecr.ap-south-1.amazonaws.com/nodejs-app",
+            "name": "nodejs-app-container",
+            "image": "381491902899.dkr.ecr.ap-south-1.amazonaws.com/demo-nodejs-app",
             "cpu": 0,
             "portMappings": [
                 {
-                    "name": "nodejs-app-60-tcp",
+                    "name": "nodejs-app-container-60-tcp",
                     "containerPort": 60,
                     "hostPort": 60,
                     "protocol": "tcp",
@@ -23,7 +23,7 @@
             "logConfiguration": {
                 "logDriver": "awslogs",
                 "options": {
-                    "awslogs-group": "/ecs/nodejs-app-task",
+                    "awslogs-group": "/ecs/test-nodejs-app",
                     "awslogs-create-group": "true",
                     "awslogs-region": "ap-south-1",
                     "awslogs-stream-prefix": "ecs"
@@ -33,7 +33,8 @@
             "systemControls": []
         }
     ],
-    "family": "nodejs-app-task",
+    "family": "test-nodejs-app",
+    "taskRoleArn": "arn:aws:iam::381491902899:role/ecsTaskExecutionRole",
     "executionRoleArn": "arn:aws:iam::381491902899:role/ecsTaskExecutionRole",
     "networkMode": "awsvpc",
     "revision": 1,
@@ -51,6 +52,9 @@
         },
         {
             "name": "com.amazonaws.ecs.capability.docker-remote-api.1.19"
+        },
+        {
+            "name": "com.amazonaws.ecs.capability.task-iam-role"
         },
         {
             "name": "ecs.capability.execution-role-ecr-pull"
@@ -79,7 +83,7 @@
         "cpuArchitecture": "X86_64",
         "operatingSystemFamily": "LINUX"
     },
-    "registeredAt": "2024-07-02T05:25:01.489Z",
+    "registeredAt": "2024-07-03T05:13:16.779Z",
     "registeredBy": "arn:aws:iam::381491902899:root",
     "tags": []
 }
