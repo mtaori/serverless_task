@@ -44,7 +44,7 @@ jobs:
         id: task-def
         uses: aws-actions/amazon-ecs-render-task-definition@v1
         with:
-          task-definition: test-nodejs-app.json
+          task-definition: test-nodejs-app-revision1.json
           container-name: demo-nodejs-app
           image: ${{ steps.build-image.outputs.image }}
       
