@@ -1,15 +1,15 @@
 {
-    "taskDefinitionArn": "arn:aws:ecs:ap-south-1:381491902899:task-definition/test-nodejs-app:1",
+    "taskDefinitionArn": "arn:aws:ecs:ap-south-1:381491902899:task-definition/test-nodejs-app:3",
     "containerDefinitions": [
         {
-            "name": "demo-nodejs-app",
+            "name": "nodejs-app-container",
             "image": "381491902899.dkr.ecr.ap-south-1.amazonaws.com/demo-nodejs-app",
             "cpu": 0,
             "portMappings": [
                 {
-                    "name": "nodejs-app-container-60-tcp",
-                    "containerPort": 60,
-                    "hostPort": 60,
+                    "name": "nodejs-app-container-80-tcp",
+                    "containerPort": 80,
+                    "hostPort": 80,
                     "protocol": "tcp",
                     "appProtocol": "http"
                 }
@@ -37,7 +37,7 @@
     "taskRoleArn": "arn:aws:iam::381491902899:role/ecsTaskExecutionRole",
     "executionRoleArn": "arn:aws:iam::381491902899:role/ecsTaskExecutionRole",
     "networkMode": "awsvpc",
-    "revision": 1,
+    "revision": 3,
     "volumes": [],
     "status": "ACTIVE",
     "requiresAttributes": [
@@ -83,7 +83,7 @@
         "cpuArchitecture": "X86_64",
         "operatingSystemFamily": "LINUX"
     },
-    "registeredAt": "2024-07-03T05:13:16.779Z",
+    "registeredAt": "2024-07-03T09:22:51.655Z",
     "registeredBy": "arn:aws:iam::381491902899:root",
     "tags": []
 }

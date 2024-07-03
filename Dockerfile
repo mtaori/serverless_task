@@ -7,5 +7,5 @@ COPY package*.json ./
 RUN npm install
 COPY . .
 # Port mapped to the docker daemon
-EXPOSE 60
+EXPOSE 80
 CMD ["node", "index.js"]
