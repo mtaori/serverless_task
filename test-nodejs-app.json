@@ -1,5 +1,5 @@
 {
-    "taskDefinitionArn": "arn:aws:ecs:ap-south-1:381491902899:task-definition/test-nodejs-app:6",
+    "taskDefinitionArn": "arn:aws:ecs:ap-south-1:381491902899:task-definition/test-nodejs-app:8",
     "containerDefinitions": [
         {
             "name": "demo-nodejs-app",
@@ -37,7 +37,7 @@
     "taskRoleArn": "arn:aws:iam::381491902899:role/ecsTaskExecutionRole",
     "executionRoleArn": "arn:aws:iam::381491902899:role/ecsTaskExecutionRole",
     "networkMode": "awsvpc",
-    "revision": 6,
+    "revision": 8,
     "volumes": [],
     "status": "ACTIVE",
     "requiresAttributes": [
@@ -83,7 +83,7 @@
         "cpuArchitecture": "X86_64",
         "operatingSystemFamily": "LINUX"
     },
-    "registeredAt": "2024-07-03T12:03:07.259Z",
+    "registeredAt": "2024-07-04T05:29:41.637Z",
     "registeredBy": "arn:aws:iam::381491902899:root",
     "tags": []
 }
