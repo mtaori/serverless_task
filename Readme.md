@@ -1,4 +1,4 @@
-****Task Details: **Setup AWS serverless Node.js with AWS where your application run with GitHub sample code. While push code will reflect on URL or IP.**
+**Task Details: Setup AWS serverless Node.js with AWS where your application run with GitHub sample code. While push code will reflect on URL or IP.**
 
 To achive this task firstly you have an AWS account. If you don't have any account go to aws console create it.
 
